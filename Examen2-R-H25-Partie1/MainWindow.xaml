@@ -5,29 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Examen2_R_H25_Partie1"
         mc:Ignorable="d"
-        Title="Gestion des Employés" Height="500" Width="500">
-    <StackPanel Margin="10,10,10,10">
+        Title="Gestion des Employés" Height="800" Width="550">
+    <StackPanel Margin="0,10,10,10" HorizontalAlignment="Center" Width="480">
 
-        <TextBlock Text="Numéro Employé :" />
-        <TextBox Name="txtNoEmploye"  />
+        <TextBlock Text="Numéro Employé :" Margin="10, 5" FontSize="16"/>
+        <TextBox Name="txtNoEmploye"  Margin="10, 5" FontSize="16"/>
 
-        <TextBlock Text="Nom :" />
-        <TextBox Name="txtNom" />
+        <TextBlock Text="Nom :" Margin="10, 5" FontSize="16"/>
+        <TextBox Name="txtNom" Margin="10, 5" FontSize="16"/>
 
-        <TextBlock Text="Prénom :" />
-        <TextBox Name="txtPrenom" />
+        <TextBlock Text="Prénom :" Margin="10, 5" FontSize="16"/>
+        <TextBox Name="txtPrenom" Margin="10, 5" FontSize="16"/>
 
-        <!-- TODO : 
-            Compléter l'interface avec les contrôles manquants pour qu'il corresponde à l'image fournie :
-            "Examen 2 - R - H25 - Partie 1.png" 
-            Ajouter un Label pour les messages d'erreurs au besoin.
-            Vous avez le droit de modifier le code fourni, entre autre pour ajuster les dimmensions au besoin.
-        -->
+        <TextBlock Text="Numéro de Poste :" Margin="10, 5" FontSize="16"/>
+        <TextBox Name="txtNoPoste" Margin="10, 5" FontSize="16"/>
 
+        <TextBlock Text="Courriel :" Margin="10, 5" FontSize="16"/>
+        <TextBox Name="txtCourriel" Margin="10, 5" FontSize="16"/>
 
-        <ListBox Name="lstEmp" 
+        <TextBlock Text="TaxHoraire :" Margin="10, 5" FontSize="16"/>
+        <TextBox Name="txtTax" Margin="10, 5" FontSize="16"/>
+
+        <Button Name="btnAjouter" Content="Ajouter Employé" FontSize="16" Margin="10, 7" Click="btnAjouter_Click"></Button>
+        <Label Name="lblSortie" Content="" Margin="10" HorizontalContentAlignment="Center" Foreground="Green" FontSize="16"></Label>
+        <ListBox x:Name="lstEmp" FontSize="16"
                  ScrollViewer.VerticalScrollBarVisibility="Visible" 
-                 Height="230" >
-        </ListBox>
+                 Height="283" />
     </StackPanel>
 </Window>
