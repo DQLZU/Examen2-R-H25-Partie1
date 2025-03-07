@@ -59,6 +59,7 @@ namespace Examen2_R_H25_Partie1
                     les_employes.Add(employe);
 
                     UpdateList();
+                    lblSortie.Content = "";
                     
                 } 
                 catch (Exception ex)

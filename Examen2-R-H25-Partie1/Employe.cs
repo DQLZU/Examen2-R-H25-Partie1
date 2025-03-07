@@ -50,7 +50,7 @@ namespace Examen2_R_H25_Partie1
             {
                 
                 if (!value.Contains("@") || !value.EndsWith("@cegep.com"))
-                    throw new ArgumentException("Le courriel doit être au format prenom.nom@cegep.com.");
+                    throw new ArgumentException("Le courriel doit être au format prenom.nom@cegep.com."); 
                 _courriel = value;
             }
         }
